@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="EditorTheme" parent="android:Theme.Black.NoTitleBar" />
+    <style name="DefaultTheme" parent="android:Theme.Black.NoTitleBar" />
+
+</resources>

@@ -1,0 +1,64 @@
+<!-- Layout of the main activity (the note editor).
+
+	 Author: Ryan Szeto
+	 Last edit date: 1/16/2013
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/topBar" >
+
+        <Button
+            android:id="@+id/open_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openFileSelect"
+            android:text="@string/open_option"
+            android:textSize="@dimen/title_bar_font_size" />
+
+	    <TextView
+	        android:id="@+id/fileNameTextView"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical|center_horizontal"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:text="@string/message_uninit_val"
+	        android:textColor="@color/fileName"
+	        android:textSize="@dimen/title_bar_font_size"
+	        tools:context=".NoteEditor" />
+
+	    <Button
+	        android:id="@+id/save_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="onSaveButtonClick"
+	        android:text="@string/save_option"
+	        android:textSize="@dimen/title_bar_font_size" />
+
+	</LinearLayout>
+
+    <EditText
+        android:id="@+id/notes_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine|textCapSentences"
+	    android:isScrollContainer="true"
+	    android:scrollbars="vertical"
+        android:text="@string/message_uninit_val" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Describes the view of a choosable item in the file chooser activity.
+
+	 Author: Ryan Szeto
+	 Last edit date: 1/16/2013
+ -->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/message_uninit_val"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="@dimen/file_list_text_size" >
+    
+
+</TextView>

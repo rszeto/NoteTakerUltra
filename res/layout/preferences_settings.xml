@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Describes the preferences screen.
+
+	 Author: Ryan Szeto
+	 Last edit date: 1/16/2013
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <PreferenceCategory 
+        android:title="@string/label_pref_note_view_group"
+        android:key="@string/key_pref_note_view_group">
+        <EditTextPreference
+            android:key="@string/key_pref_text_size"
+            android:summary="@string/desc_change_text_size"
+            android:title="@string/label_change_text_size"
+            android:inputType="number"
+            android:defaultValue="20" />
+        <ListPreference 
+            android:key="@string/key_pref_color"
+            android:summary="@string/desc_change_note_colors"
+            android:entries="@array/textbox_colors"
+            android:entryValues="@array/textbox_colors"
+            android:title="@string/label_change_note_colors" />
+        <ListPreference 
+            android:key="@string/key_pref_font"
+            android:summary="@string/desc_change_text_font"
+            android:entries="@array/text_fonts"
+            android:entryValues="@array/text_fonts_vals"
+            android:title="@string/label_change_text_font" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

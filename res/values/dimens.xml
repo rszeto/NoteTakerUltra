@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_font_size">15sp</dimen>
+    <dimen name="file_list_text_size">25sp</dimen>
+    
+</resources>
